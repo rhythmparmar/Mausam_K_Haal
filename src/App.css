@@ -1,38 +1,49 @@
-.App {
-  text-align: center;
-}
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Maze&display=swap');
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.weatherBg{
+  background: url("https://www-cdn.eumetsat.int/files/styles/16_9_large/s3/2020-06/ASpot_Weather.jpg?h=d1cb525d&itok=lvYWh_W8");
+  height: 50vh;
   display: flex;
-  flex-direction: column;
+  width: 100vw;
+  background-size: cover;
   align-items: center;
+  flex-direction: column;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.heading{
   color: white;
+  font-family: Rubix;
+}
+.weatherResultBox{
+  margin: auto;
+  width: 500px;
+  height: 250px;
+  background-color: hsl(0, 0%, 96%);
 }
 
-.App-link {
-  color: #61dafb;
+.weatherIcon{
+  margin-top: 2rem;
+  width: 93px;
+  height: 85px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.weatherCity{
+  font-size: 35px;
+}
+.weatherTemp{
+  font-size: 45px;
+  font-weight: bold;
+}
+
+.btn {
+  background-color: rgb(38, 0, 255);
+  position: absolute;
+  width: 7%;
+  top: 37%;
+  left: 46%;
+}
+.btn:hover{
+  border-color: rgb(255, 0, 0);
+  background-color: red;
 }
